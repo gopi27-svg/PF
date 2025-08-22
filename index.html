@@ -170,7 +170,7 @@
       </div>
       <div id="step2" class="section-card hidden">
         <div class="section-header"><div class="badge">2</div><div class="section-title">Select Service</div></div>
-        <div class="form-group"><label for="service">Service Type</label><select id="service" required><option value="">-- Select --</option><option value="allotActivate">Service 1 — UAN Allotment & Activation</option><option value="activate">Service 2 — UAN Activation</option><option value="faceAuth">Service 3 — Face Authentication</option></select></div>
+        <div class="form-group"><label for="service">Service Type</label><select id="service" required><option value="">-- Select --</option><option value="allotActivate">Service 1 — UAN Allotment & Activation For New UAN Generation</option><option value="activate">Service 2 — UAN Activation for Existing UAN</option><option value="faceAuth">Service 3 — Face Authentication for Existing UAN</option></select></div>
         <div class="nav-buttons"><button type="button" class="secondary" id="back2">Back</button><div class="right"><button type="button" id="next2">Next</button></div></div>
       </div>
       <div id="step3" class="section-card hidden">
@@ -181,7 +181,7 @@
             <label><input type="checkbox" id="chkUmang"> UMANG app installed</label>
             <label><input type="checkbox" id="chkFaceRD"> Aadhaar Face RD installed</label>
         </div>
-        <div class="form-group"><label for="uan">UAN (if generated)</label><input type="text" id="uan" maxlength="12" placeholder="12-digit UAN"><div id="uanError" class="error-text"></div></div>
+        <div class="form-group"><label for="uan">UAN Number</label><input type="text" id="uan" maxlength="12" placeholder="12-digit UAN"><div id="uanError" class="error-text"></div></div>
         <div class="form-group"><label for="confStatus">Status</label><select id="confStatus" required><option value="">Select…</option><option>Generated successfully</option><option>Pending – Face Auth failed</option><option>Pending – Aadhaar-mobile not linked</option><option>Pending – App/Device issue</option></select><div id="confStatusError" class="error-text">Please select a status.</div></div>
         <div class="form-group"><label for="confNotes">Remark's</label><textarea id="confNotes" placeholder="Any issues faced..."></textarea></div>
         <div class="form-group"><label for="screenshot">Attach screenshot (Any issues or Errors)</label><input id="screenshot" type="file" accept="image/*" /></div>
